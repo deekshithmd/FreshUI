@@ -1,0 +1,37 @@
+.avatar{
+    position: relative;
+    margin: 0.8rem;
+}
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+.img-round{
+    border-radius: 50%;
+}
+.avatar-lg-size{
+    width: 15rem;
+    height: 15rem;
+    font-size: 7rem;
+}
+.avatar-md-size{
+    width: 11rem;
+    height: 11rem;
+    font-size: 5rem;
+}
+.avatar-sm-size{
+    width: 7rem;
+    height: 7rem;
+    font-size: 3.5rem;
+}
+.avatar-xs-size{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+}
+.avatar-text{
+    background-color: rgb(90, 248, 85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
