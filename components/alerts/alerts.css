@@ -1,0 +1,64 @@
+:root{
+    --primary-color: #0bb32f;
+    --secondary-color: #f8962e;
+    --primary-text-color: #000000;
+    --secondary-text-color: #ffffff;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 4rem;
+}
+.alert-box{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 1.3rem;
+    border-radius: 0.4rem;
+    margin: 0.7rem auto;
+}
+.alert-box-border{
+    border: 0.3rem solid black;
+}
+.alert-primary{
+    background-color: rgb(177, 237, 241);
+    color: rgb(42, 139, 219);
+}
+.alert-secondary{
+    background-color: rgb(210, 238, 235);
+    color: rgb(71, 62, 62);
+}
+.alert-success{
+    background-color: rgb(132, 230, 197);
+    color: rgb(7, 95, 22);
+}
+.alert-danger{
+    background-color: rgb(240, 212, 212);
+    color: rgb(224, 28, 28);
+}
+.alert-warning{
+    background-color: rgb(243, 228, 201);
+    color: rgb(255, 166, 0);
+}
+.alert-warning-close{
+    display: flex;
+    align-items: center;
+}
+.btn-close{
+    font-size: 4rem;
+    border: none;
+}
+#alert-warning-close-btn{
+    background-color: transparent;
+    line-height: 2.5rem;
+    float: right;
+}
+#alert-warning-close-btn:hover{
+    color: rgb(255, 0, 0);
+}

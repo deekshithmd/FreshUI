@@ -1,0 +1,54 @@
+:root{
+    --primary-color: #0bb32f;
+    --secondary-color: #f8962e;
+    --primary-text-color: #000000;
+    --secondary-text-color: #ffffff;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 4rem;
+}
+.avatar{
+    position: relative;
+    margin: 0.8rem;
+}
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+.img-round{
+    border-radius: 50%;
+}
+.avatar-lg-size{
+    width: 16rem;
+    height: 16rem;
+    font-size: 8rem;
+}
+.avatar-md-size{
+    width: 12rem;
+    height: 12rem;
+    font-size: 6rem;
+}
+.avatar-sm-size{
+    width: 8rem;
+    height: 8rem;
+    font-size: 4rem;
+}
+.avatar-xs-size{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+}
+.avatar-text{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
