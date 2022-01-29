@@ -1,0 +1,31 @@
+@import url(cards/cards.css);
+:root{
+    --primary-color: #0bb32f;
+    --secondary-color: #f8962e;
+    --primary-text-color: #000000;
+    --secondary-text-color: #ffffff;
+    --primary-background:#b1edf1;
+    --primary-text-color:#2a8bdb;
+    --success-background:#84e6c5;
+    --success-text-color:#075f16;
+    --danger-background:#f0d4d4;
+    --danger-text-color:#e01c1c;
+    --warning-background:#f3e4c9;
+    --warning-text-color:#ffa600;
+    --secondary-background:#d2eeeb;
+    --secondary-alert-text-color:#473e3e;
+    --close-btn:#e01c1c;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 4rem;
+}
