@@ -1,0 +1,51 @@
+.badge-container{
+    position: relative;
+    box-sizing: border-box;
+}
+.status-badge{
+    position: absolute;
+    left: 75%;
+    bottom: 6%;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+}
+.badge-status-busy{
+    background-color: red;
+}
+.badge-status-available{
+    background-color: green;
+}
+.badge-status-away{
+    background-color: orange;
+}
+.btn-icon{
+    font-size: 1.8rem;
+    margin: 0.7rem;
+}
+.status-badge-number{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -2.5rem;
+    right: -1.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.3rem;
+}
+.badge{
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5em;
+    font-weight: 600;
+    line-height:2em;
+}
+.bg-primary{
+    background-color: var(--primary-color);
+}
+.round-pill-badge{
+    border-radius: 2rem;
+}
