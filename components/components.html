@@ -6,25 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Components</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="card-container">
-        <div class="card-vertical">
-            <div class="card-vertical-image-content">
-                <img class="card-vertical-image" src="images/apple.png" alt="Product Image">
-                <span class="card-actions-left"><i class="far fa-heart"></i></span>
-                <span class="card-actions-right"><i class="fa fa-share-alt"></i></span>
-            </div>
-            <div class="card-vertical-details">
-                <h2>Apple</h2>
-                <p>Fresh apples from farm. It is good to eat healthy organically grown fruits</p>
-                <h3>Price : Rs.100/kg</h3>
-                <div class="card-vertical-buttons">
-                    <button class="btn btn-icon-text-primary"><span class="btn-icon"><i class="fa fa-cart-shopping"></i></span>Add to Cart</button>
-                </div>  
-            </div>
+    <div class="card-container vertical">
+        <div class="card-img vertical-img">
+            <img src="images/apple.png" alt="Apple">
         </div>
+        <div class="card-details card-details-vertical">
+            <h2 class="card-item-name margin-less">Apple</h2>
+            <h4 class="card-item-details margin-less">Fresh fruit from farm</h4>
+            <h3 class="card-item-price margin-less">Rs.100/kg</h3>
+            <button class="btn btn-icon-text-primary margin-less"><span class="btn-icon"><i class="fa fa-cart-shopping"></i></span>Add to Cart</button>
+            <button class="btn btn-solid-primary">Go to Cart</button>
+        </div>
+    </div>
+    <div class="card-container horizontal">
+        <div class="card-img horizontal-img">
+            <img src="images/apple.png" alt="Apple">
+        </div>
+        <div class="card-details card-details-horizontal">
+            <h2 class="card-item-name margin-less">Apple</h2>
+            <h4 class="card-item-details margin-less">Fresh fruit from farm</h4>
+            <h3 class="card-item-price margin-less">Rs.100/kg</h3>
+            <button class="btn btn-icon-text-primary margin-less card-buttons-horizontal"><span class="btn-icon"><i class="fa fa-cart-shopping"></i></span>Add to Cart</button>
+            <button class="btn btn-solid-primary card-buttons-horizontal">Go to Cart</button>
+        </div>
+        <span class="badge bg-primary card-badge">NEW</span>
+    </div>
+    <div class="card-container vertical">
+        <div class="card-img vertical-img">
+            <img src="images/apple.png" alt="Apple">
+        </div>
+        <div class="card-details card-details-vertical">
+            <h2 class="card-item-name margin-less">Apple</h2>
+            <h4 class="card-item-details margin-less">Fresh fruit from farm</h4>
+            <h3 class="card-item-price margin-less">Rs.100/kg</h3>
+            <button class="btn btn-icon-text-primary margin-less"><span class="btn-icon"><i class="fa fa-cart-shopping"></i></span>Add to Cart</button>
+            <button class="btn btn-solid-primary">Go to Cart</button>
+        </div>
+        <span class="badge bg-primary card-badge">NEW</span>
+    </div>
+    <div class="card-container vertical">
+        <div class="card-img vertical-img">
+            <img src="images/apple.png" alt="Apple">
+        </div>
+        <div class="card-details card-details-vertical">
+            <h2 class="card-item-name margin-less">Apple</h2>
+            <h4 class="card-item-details margin-less">Fresh fruit from farm</h4>
+            <h3 class="card-item-price margin-less">Rs.100/kg</h3>
+            <button class="btn btn-icon-text-primary margin-less"><span class="btn-icon"><i class="fa fa-cart-shopping"></i></span>Add to Cart</button>
+            <button class="btn btn-solid-primary">Go to Cart</button>
+            <span class="card-close">&times;</span>
+        </div>
+    </div>
+    <div class="card-container vertical">
+        <div class="card-img vertical-img">
+            <img src="images/apple.png" alt="Apple">
+        </div>
+        <div class="card-details card-details-vertical">
+            <h3 class="card-item-price margin-less">Rs.100/kg</h3>
+            <button class="btn btn-icon-text-primary margin-less"><span class="btn-icon"><i class="fa fa-cart-shopping"></i></span>Add to Cart</button>
+            <button class="btn btn-solid-primary">Go to Cart</button>
+        </div>
+        <div class="card-text-overlay">
+            <h2 class="card-item-name margin-less">Apple</h2>
+            <h4 class="card-item-details margin-less">Fresh fruit from farm</h4>
+        </div>
+    </div>
+    <div class="card-container vertical overlay">
+        <div class="card-img vertical-img">
+            <img src="images/apple.png" alt="Apple">
+        </div>
+        <div class="card-details card-details-vertical">
+            <h2 class="card-item-name margin-less">Apple</h2>
+            <h4 class="card-item-details margin-less">Fresh fruit from farm</h4>
+            <h3 class="card-item-price margin-less">Rs.100/kg</h3>
+            <button class="btn btn-icon-text-primary margin-less"><span class="btn-icon"><i class="fa fa-cart-shopping"></i></span>Add to Cart</button>
+            <button class="btn btn-solid-primary">Go to Cart</button>
+        </div>
+        <div class="card-text-overlay out-of-stock">
+            <h2 class="card-item-name">Out of Stock</h2>
+        </div>
+    </div>
+    <div class="card-container horizontal text-card">
+        <div class="card-img horizontal-img text-hide">
+            <img src="images/apple.png" alt="Apple">
+        </div>
+        <div class="card-details card-details-horizontal text-hide">
+            <h2 class="card-item-name margin-less">Apple</h2>
+            <h4 class="card-item-details margin-less">Fresh fruit from farm</h4>
+            <h3 class="card-item-price margin-less">Rs.100/kg</h3>
+            <button class="btn btn-icon-text-primary margin-less card-buttons-horizontal"><span class="btn-icon"><i class="fa fa-cart-shopping"></i></span>Add to Cart</button>
+            <button class="btn btn-solid-primary card-buttons-horizontal">Go to Cart</button>
+        </div>
+        <span class="card-close">&times;</span>
     </div>
 </body>
 </html>
