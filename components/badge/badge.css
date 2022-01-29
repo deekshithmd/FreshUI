@@ -1,6 +1,7 @@
 .badge-container{
     position: relative;
     box-sizing: border-box;
+    margin: 0.8rem;
 }
 .status-badge{
     position: absolute;
@@ -12,13 +13,13 @@
     border: 0.2rem solid white;
 }
 .badge-status-busy{
-    background-color: red;
+    background-color: var(--danger-text-color);
 }
 .badge-status-available{
-    background-color: green;
+    background-color: var(--success-text-color);
 }
 .badge-status-away{
-    background-color: orange;
+    background-color: var(--warning-text-color);
 }
 .btn-icon{
     font-size: 1.8rem;
@@ -29,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -2.5rem;
+    top: -2.7rem;
     right: -1.8rem;
     width: 1.8rem;
     height: 1.8rem;
@@ -41,7 +42,7 @@
     padding: 0.5rem 0.7rem;
     border-radius: 0.5em;
     font-weight: 600;
-    line-height:2em;
+    line-height:2rem;
 }
 .bg-primary{
     background-color: var(--primary-color);
