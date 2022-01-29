@@ -6,42 +6,53 @@
     border-radius: 0.4rem;
     margin: 0.7rem auto;
 }
+
 .alert-box-border{
     border: 0.3rem solid black;
 }
+
 .alert-primary{
-    background-color: rgb(177, 237, 241);
-    color: rgb(42, 139, 219);
+    background-color: var(--primary-background);
+    color: var(--primary-text-color);
 }
+
 .alert-secondary{
-    background-color: rgb(210, 238, 235);
-    color: rgb(71, 62, 62);
+    background-color: var(--secondary-background);
+    color: var(--secondary-alert-text-color);
 }
+
 .alert-success{
-    background-color: rgb(132, 230, 197);
-    color: rgb(7, 95, 22);
+    background-color: var(--success-background);
+    color:var(--success-text-color);
 }
+
 .alert-danger{
-    background-color: rgb(240, 212, 212);
-    color: rgb(224, 28, 28);
+    background-color: var(--danger-background);
+    color: var(--danger-text-color);
 }
+
 .alert-warning{
-    background-color: rgb(243, 228, 201);
-    color: rgb(255, 166, 0);
+    background-color: var(--warning-background);
+    color: var(--warning-text-color);
 }
+
 .alert-warning-close{
     display: flex;
     align-items: center;
 }
+
 .btn-close{
     font-size: 4rem;
     border: none;
 }
-#alert-warning-close-btn{
+
+.alert-warning-close-btn{
     background-color: transparent;
     line-height: 2.5rem;
-    float: right;
+    position: absolute;
+    right: 10px;
 }
-#alert-warning-close-btn:hover{
-    color: rgb(255, 0, 0);
+
+.alert-warning-close-btn:hover{
+    color: var(--close-btn)
 }
