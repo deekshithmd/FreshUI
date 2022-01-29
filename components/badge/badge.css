@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0.8rem;
 }
+
 .status-badge{
     position: absolute;
     left: 75%;
@@ -12,19 +13,24 @@
     border-radius: 50%;
     border: 0.2rem solid white;
 }
+
 .badge-status-busy{
     background-color: var(--danger-text-color);
 }
+
 .badge-status-available{
     background-color: var(--success-text-color);
 }
+
 .badge-status-away{
     background-color: var(--warning-text-color);
 }
+
 .btn-icon{
     font-size: 1.8rem;
     margin: 0.7rem;
 }
+
 .status-badge-number{
     position: absolute;
     display: flex;
@@ -38,15 +44,18 @@
     border: none;
     padding: 0.3rem;
 }
+
 .badge{
     padding: 0.5rem 0.7rem;
     border-radius: 0.5em;
     font-weight: 600;
     line-height:2rem;
 }
+
 .bg-primary{
     background-color: var(--primary-color);
 }
+
 .round-pill-badge{
     border-radius: 2rem;
 }
