@@ -1,5 +1,5 @@
-@import url(alerts/alerts.css);
-@import url(avatar/avatar.css);
+@import url(components/alerts/alerts.css);
+@import url(components/avatar/avatar.css);
 :root{
     --primary-color: #0bb32f;
     --secondary-color: #f8962e;
