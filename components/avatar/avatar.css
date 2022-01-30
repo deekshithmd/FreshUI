@@ -2,33 +2,44 @@
     position: relative;
     margin: 0.8rem;
 }
+
 .img-responsive{
     width: 100%;
     height: auto;
 }
+
 .img-round{
     border-radius: 50%;
 }
+
+.img-round{
+    border-radius: 50%;
+}
+
 .avatar-lg-size{
     width: 16rem;
     height: 16rem;
     font-size: 8rem;
 }
+
 .avatar-md-size{
     width: 12rem;
     height: 12rem;
     font-size: 6rem;
 }
+
 .avatar-sm-size{
     width: 8rem;
     height: 8rem;
     font-size: 4rem;
 }
+
 .avatar-xs-size{
     width: 5rem;
     height: 5rem;
     font-size: 2rem;
 }
+
 .avatar-text{
     background-color: var(--primary-color);
     display: flex;
