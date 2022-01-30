@@ -1,6 +1,6 @@
-@import url(badge/badge.css);
-@import url(buttons/buttons.css);
-@import url(badge/avatar.css);
+@import url(components/badge/badge.css);
+@import url(components/buttons/buttons.css);
+@import url(components/avatar/avatar.css);
 :root{
     --primary-color: #0bb32f;
     --secondary-color: #f8962e;
