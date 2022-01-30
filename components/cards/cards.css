@@ -101,6 +101,7 @@ img{
     bottom: 20rem;
     left: 4rem;
     transform: rotate(-55deg);
+    color: var(--primary-text-color);
 }
 .text-hide{
     display: none;
