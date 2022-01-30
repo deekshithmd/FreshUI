@@ -1,5 +1,7 @@
 @import url(components/alerts/alerts.css);
 @import url(components/avatar/avatar.css);
+@import url(components/image/image.css);
+@import url(components/input/input.css);
 :root{
     --primary-color: #0bb32f;
     --secondary-color: #f8962e;
