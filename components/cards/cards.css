@@ -89,7 +89,7 @@ img{
 }
 .card-text-overlay{
     position: absolute;
-    color: var(--secondary-text-color);
+    /* color: var(--secondary-text-color); */
     bottom: 17rem;
     left: 0.7rem;
 }
