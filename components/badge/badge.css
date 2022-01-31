@@ -47,6 +47,7 @@
 
 .badge{
     padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
     border-radius: 0.5em;
     font-weight: 600;
     line-height:2rem;
@@ -59,3 +60,4 @@
 .round-pill-badge{
     border-radius: 2rem;
 }
+
