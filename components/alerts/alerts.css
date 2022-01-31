@@ -5,6 +5,7 @@
     padding: 1.3rem;
     border-radius: 0.4rem;
     margin: 0.7rem auto;
+    position: relative;
 }
 
 .alert-box-border{
