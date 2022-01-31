@@ -12,6 +12,10 @@
     border-radius: 50%;
 }
 
+.img-round{
+    border-radius: 50%;
+}
+
 .avatar-lg-size{
     width: 16rem;
     height: 16rem;
