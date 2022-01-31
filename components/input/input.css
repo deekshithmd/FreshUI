@@ -5,7 +5,7 @@
     padding: 1rem 1.5rem;
     font-size: 2rem;
     width: fit-content;
-    border-radius: 0.9rem;
+    border-radius: 9px;
 }
 .input-field{
     border: 2px solid black;
@@ -42,11 +42,9 @@
 }
 .error-msg{
     color: red;
-    /* display: none; */
 }
 .success-msg{
     color: green;
-    /* display: none; */
 }
 .message-icon{
     padding-right: 0.5rem;
