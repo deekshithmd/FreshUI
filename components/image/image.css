@@ -1,0 +1,18 @@
+.image-responsive{
+    width: 100%;
+    height: auto;
+}
+.image-landscape-round{
+    display: inline-block;
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.image-landscape-round img{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    margin-left: -25%;
+}
