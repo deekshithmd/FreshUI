@@ -23,12 +23,12 @@
     grid-area: header;
     background-color: var(----secondary-text-color);
     display: flex; 
-    font-size: 4rem;
+    font-size: 3.5rem;
     justify-content: space-between;
     position: sticky;
     z-index: 1;
     box-shadow: inset 0px 0px 10px var(--primary-color);
-    padding: 2rem 3rem;
+    padding: 2rem;
 }
 .sidebar{
     grid-area: sidebar;
@@ -41,15 +41,15 @@
 }
 .main{
     grid-area: main;
-    padding: 4rem;
+    padding: 3rem;
 }
 .footer{
     grid-area: footer;
     background-color: var(--secondary-color);
     display: flex; 
-    font-size: 4rem;
+    font-size: 3rem;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2rem;
 }
 .footer-center{
     display: flex;
@@ -65,8 +65,8 @@
     display: flex;
 }
 .social-media{
-    padding: 0 2rem;
-    font-size: 3rem;
+    padding: 0 1rem;
+    font-size: 2.5rem;
 }
 .side-container{
     display: flex;
@@ -80,11 +80,12 @@
 }
 .heading{
     font-size: 3rem;
+    font-weight: 600;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 .list-item{
-    font-size: 2.2rem;
+    font-size: 2rem;
     width: 100%;
     display: inline-flex;
     justify-content: center;
@@ -96,17 +97,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0 1rem var(--secondary-color);
 }
 .round-text-avatars{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0 1rem var(--secondary-color);
 }
 .component-elements-center{
     display: flex;
@@ -117,13 +112,10 @@
 .component-container{
     width: auto;
     height: auto;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    box-shadow: 0px 0px 20px var(--secondary-color);
-    border-radius: 10px;
+    margin-bottom: 2rem;
 }
 iframe{
-   margin: 6rem auto;
+   margin: 5rem auto;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -131,16 +123,10 @@ iframe{
 .avatar-badges{
     display: flex;
     align-items: center;
-    padding: 3rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0 1rem var(--secondary-color);
 }
 .badge-icons{
     display: flex;
     align-items: center;
-    padding: 3rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0 1rem var(--secondary-color);
 }
 .badge-icons a{
     margin: 0 2rem;
@@ -152,9 +138,6 @@ iframe{
 .inputs{
     display: flex;
     justify-content:space-around;
-    padding: 3rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0 1rem var(--secondary-color);
 }
 .inputs div{
     margin: 0 2rem;
@@ -166,9 +149,6 @@ iframe{
     align-items: center;
     width: 60%;
     height: auto;
-    padding: 3rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0 1rem var(--secondary-color);
 }
 .images img{
     margin-bottom: 2rem;
@@ -179,9 +159,6 @@ iframe{
     justify-content: space-evenly;
     align-items: center;
     width: 70%;
-    padding: 3rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 0 1rem var(--secondary-color);
 }
 
 .list-item:hover{
@@ -191,12 +168,12 @@ iframe{
 }
 .component-description{
     font-size: 2.3rem;
-    margin-left: 10rem;
+    margin: 1rem auto;
     margin-bottom: 5rem;
 }
 .component-name{
     font-size: 4rem;
-    margin-left: 10rem;
+    margin: 1rem auto;
     margin-bottom: 3rem;
 }
 .alerts-align{
@@ -207,4 +184,8 @@ iframe{
     height: auto;
     margin: auto;
 }
-
+.border-shadow{
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--secondary-color);
+}
