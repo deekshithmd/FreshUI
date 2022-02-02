@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @import url(components/badge/badge.css);
 @import url(components/cards/cards.css);
 @import url(components/badge/badge.css);
@@ -10,22 +11,28 @@
 @import url(doc.css);
 @import url(components/typography/typography.css);
 @import url(index.css);
+@import url(components/utility/utility.css);
 :root{
     --primary-color: #0bb32f;
     --secondary-color: #f8962e;
+
     --primary-text-color: #000000;
     --secondary-text-color: #ffffff;
+
     --background-color: #eeeeee;
+
     --primary-background:#b1edf1;
     --primary-alert-text-color:#2a8bdb;
+
     --success-background:#84e6c5;
     --success-text-color:#075f16;
+
     --danger-background:#f0d4d4;
     --danger-text-color:#e01c1c;
+
     --warning-background:#f3e4c9;
     --warning-text-color:#ffa600;
-    --secondary-background:#d2eeeb;
-    --secondary-alert-text-color:#473e3e;
+
     --close-btn:#e01c1c;
 }
 

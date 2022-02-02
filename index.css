@@ -51,22 +51,6 @@
     color: var(--secondary-text-color);
 }
 
-.margin-l{
-    margin-left: 1rem;
-}
-
-.margin-r{
-    margin-right: 1rem;
-}
-
-.margin-t{
-    margin-top: 1rem;
-}
-
-.margin-b{
-    margin-bottom: 1rem;
-}
-
 .link-style-none{
     text-decoration: none;
 }
