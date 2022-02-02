@@ -16,7 +16,8 @@
 
 .btn-outline-primary{
     background-color: transparent;
-    border: 0.3rem solid var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--primary-color);
 }
 
 .btn-icon{
@@ -50,9 +51,12 @@
 
 .link-btn{
     text-decoration: none;
+    color: var(--primary-text-color);
+}
+.link-btn:hover{
+    background-color: var(--primary-color);
     color: var(--secondary-text-color);
 }
-
 /*Toggle-button*/
 .toggle-btn{
     border: none;
