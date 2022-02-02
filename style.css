@@ -9,6 +9,7 @@
 @import url(components/input/input.css);
 @import url(doc.css);
 @import url(components/typography/typography.css);
+@import url(index.css);
 :root{
     --primary-color: #0bb32f;
     --secondary-color: #f8962e;
@@ -36,6 +37,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
 }
 *{
     box-sizing: border-box;
