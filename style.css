@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @import url(components/badge/badge.css);
-@import url(components/cards/cards.css);
+@import url(components/card/card.css);
 @import url(components/badge/badge.css);
-@import url(components/buttons/buttons.css);
-@import url(components/alerts/alerts.css);
+@import url(components/button/button.css);
+@import url(components/alert/alert.css);
 @import url(components/avatar/avatar.css);
 @import url(components/image/image.css);
 @import url(components/input/input.css);
@@ -34,7 +34,6 @@
     --warning-text-color:#ffa600;
 
     --close-btn:#e01c1c;
-    --white-border: #ffffff;
     --red-background:#e01c1c;
 
     --badge-shadow: #a36b02;
