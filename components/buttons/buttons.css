@@ -1,8 +1,13 @@
 .btn{
     border: none;
-    padding: 1rem 1.5rem;
-    font-size: 2rem;
-    border-radius: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    max-width: 20rem;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 .btn-solid-primary{
@@ -11,103 +16,162 @@
 }
 
 .btn-solid-primary:hover{
+    background-color: var(--primary-hover);
+    color: var(--secondary-text-color);
+}
+
+.btn-solid-secondary{
     background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+}
+
+.btn-solid-secondary:hover{
+    background-color: var(--secondary-hover);
+    color: var(--secondary-text-color);
+}
+
+.btn-solid-disabled{
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+}
+.btn-solid-disabled:hover{
+    cursor: not-allowed;
 }
 
 .btn-outline-primary{
     background-color: transparent;
-    padding: 0.8rem 1.5rem;
     border: 2px solid var(--primary-color);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+}
+
+.btn-outline-secondary{
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-outline-secondary:hover{
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+}
+
+.btn-outline-disabled{
+    opacity: 0.5;
+    color: var(--primary-text-color);
+    border: 2px solid var(--primary-color)
+}
+.btn-outline-disabled:hover{
+    cursor: not-allowed;
 }
 
 .btn-icon{
     margin: 0;
-    margin-right: 0.8rem;
     font-size: 2rem;
+}
+
+.btn-icon:hover{
+    color: var(--primary-hover);
 }
 
 .btn-icon-primary{
     color: var(--primary-color);
     background: transparent;
-    font-size: 3rem;
+}
+
+.btn-icon-secondary{
+    color: var(--secondary-color);
+    background: transparent;
 }
 
 .btn-icon-text-primary{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--secondary-text-color);
 }
 
 .btn-icon-text-primary:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-hover);
 }
 
-.btn-disabled{
-    opacity: 0.7;
+.btn-icon-text-primary-outline{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
-.btn-disabled:hover{
+.btn-icon-text-primary-outline:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+}
+
+.btn-icon-text-primary-disabled{
+    opacity: 0.6;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+}
+
+.btn-icon-text-primary-disabled:hover{
     cursor: not-allowed;
 }
 
 .link-btn{
-    text-decoration: none;
     color: var(--primary-text-color);
 }
+
 .link-btn:hover{
-    background-color: var(--primary-color);
+    background-color: var(--primary-hover);
     color: var(--secondary-text-color);
 }
-/*Toggle-button*/
+
 .toggle-btn{
     border: none;
-    background-color: transparent;
 }
-
 .switch{
-position: relative;
-display: inline-block;
-width: 6rem;
-height: 3rem;
-}
-
-.switch input{
-    opacity: 0;
-    width: 0;
-    height: 0;
+    position: relative;
+    display: inline-block;
+    width: 4.5rem;
+    height: 2.8rem;
 }
 
 .slider{
     position: absolute;
     cursor: pointer;
     top: 0;
+    right: 0;
     left: 0;
     bottom: 0;
-    right: 0;
-    background-color: var(--secondary-background);
+    background-color: rgb(153, 150, 150);
     transition: .4s;
+    border-radius: 3.5rem;
 }
-
+.switch input{
+    display: none;
+}
 .slider::before{
     position: absolute;
-    content: "";
+    content: '';
     height: 2rem;
-    width: 2.5rem;
-    left: 0.5rem;
-    bottom: 0.5rem;
-    background-color: var(--secondary-text-color);
+    width: 2rem;
+    left: 5px;
+    bottom: 4px;
+    background-color: white;
     transition: .4s;
+    border-radius: 2rem;
 }
 
 input:checked + .slider{
     background-color: var(--primary-color);
 }
-
-input:focus + .slider{
-    box-shadow: 0 0 1px var(--primary-color);
-}
-
 input:checked + .slider::before{
-    transform: translateX(2.5rem);
+    transform: translateX(1.5rem);
 }
 
 .btn-float-action{
@@ -116,9 +180,14 @@ input:checked + .slider::before{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.5rem;
-    width: 6rem;
-    height: 6rem;
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    padding: 2rem;
+    padding: 1.5rem;
+}
+.btn-float-action:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 9px var(--secondary-color);
+    background-color: var(--primary-hover);
 }

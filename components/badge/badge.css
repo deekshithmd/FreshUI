@@ -1,17 +1,16 @@
 .badge-container{
     position: relative;
     box-sizing: border-box;
-    margin: 0.8rem;
 }
 
-.status-badge{
+.status-badge-avatar{
     position: absolute;
-    left: 75%;
+    width: 30%;
+    height: 30%;
+    left: 67%;
     bottom: 6%;
-    width: 15%;
-    height: 15%;
     border-radius: 50%;
-    border: 0.2rem solid white;
+    border: 2px solid var(--white-border);
 }
 
 .badge-status-busy{
@@ -26,38 +25,113 @@
     background-color: var(--warning-text-color);
 }
 
-.btn-icon{
-    font-size: 1.8rem;
-    margin: 0.7rem;
+.badge-btn{
+    font-size: 2.5rem;
+    border: none;
+    background-color: transparent;
 }
 
-.status-badge-number{
+.status-badge-icon{
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -2.7rem;
-    right: -1.8rem;
-    width: 1.8rem;
-    height: 1.8rem;
-    background-color: var(--primary-color);
-    border: none;
-    padding: 0.3rem;
+    top: -1.5rem;
+    right: -1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    border-radius: 50%;
+    border: 2px solid var(--white-border);
+    padding: 5px;
 }
 
-.badge{
+.background-primary{
+    background-color: var(--primary-color);
+}
+
+.background-secondary{
+    background-color: var(--secondary-color);
+}
+
+.background-red{
+    background-color: var(--red-background);
+}
+
+.text-badge{
     padding: 0.5rem 0.7rem;
-    border-radius: 1rem;
-    border-radius: 0.5em;
-    font-weight: 600;
-    line-height:2rem;
 }
 
-.bg-primary{
-    background-color: var(--primary-color);
+.border-curve-badge{
+    border-radius: 5px;
 }
 
 .round-pill-badge{
     border-radius: 2rem;
+}
+
+.card{
+    position: relative;
+    width: 25rem;
+    height: 40rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    margin: 2rem;
+}
+
+.badge span{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    top: -1rem;
+    right: -1rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.badge-new span::before{
+    content: '50% off';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    width: 150%;
+    height: 30%;
+    background-color: var(--secondary-color);
+    transform: rotate(45deg) translateY(-1rem);
+}
+
+.badge-offer span::before{
+    content: 'new';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    width: 150%;
+    height: 30%;
+    background-color: var(--secondary-color);
+    transform: rotate(45deg) translateY(-1rem);
+}
+
+.badge span::after{
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--badge-shadow);
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow: -6rem -6rem var(--badge-shadow);
 }
 

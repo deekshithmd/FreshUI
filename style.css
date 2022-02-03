@@ -35,6 +35,15 @@
 
     --close-btn:#e01c1c;
     --white-border: #ffffff;
+    --red-background:#e01c1c;
+
+    --badge-shadow: #a36b02;
+
+    --primary-hover:#049c25;
+    --secondary-hover:#fa8508;
+
+    --border-white: #ffffff;
+    --border-black: #000000;
 }
 
 html{
