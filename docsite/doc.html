@@ -50,13 +50,13 @@
         <aside class="sidebar"> 
             <ul class="component-list">
                 <h2 class="subtitle-1 text-underline">Components</h2>
-                <li class="component-item text-3xl"><a href="#alert">Alert</a></li>
-                <li class="component-item text-3xl"><a href="#avatar">Avatar</a></li>
-                <li class="component-item text-3xl"><a href="#badge">Badge</a></li>
-                <li class="component-item text-3xl"><a href="#button">Button</a></li>
-                <li class="component-item text-3xl"><a href="#card">Card</a></li>
-                <li class="component-item text-3xl"><a href="#image">Image</a></li>
-                <li class="component-item text-3xl"><a href="#input">Input</a></li>
+                <li class="component-item text-3xl"><a href="#alert" class="link-style-none">Alert</a></li>
+                <li class="component-item text-3xl"><a href="#avatar" class="link-style-none">Avatar</a></li>
+                <li class="component-item text-3xl"><a href="#badge" class="link-style-none">Badge</a></li>
+                <li class="component-item text-3xl"><a href="#button" class="link-style-none">Button</a></li>
+                <li class="component-item text-3xl"><a href="#card" class="link-style-none">Card</a></li>
+                <li class="component-item text-3xl"><a href="#image" class="link-style-none">Image</a></li>
+                <li class="component-item text-3xl"><a href="#input" class="link-style-none">Input</a></li>
             </ul>
         </aside>
         <div class="main">
@@ -66,7 +66,7 @@
                 <div class="component-item-container">
                     <h3>Basic alerts</h2>
                     <p class="text-3xl">These are alerts with basic style and functionalities</p>
-                    <div class="sample-container">
+                    <section class="sample-container">
                         <div class="alert-container alert-primary-solid">
                             <span><i class="margin-r fa fa-info-circle"></i></span>
                             3 messages in incontainer
@@ -83,9 +83,331 @@
                             <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
                             Warning! There was problem in your connection.
                         </div>
-                    </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-primary-solid%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%25093%2520messages%2520in%2520incontainer%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-success-solid%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2509Congratulations%21%2520Successfully%2520subscribed.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-danger-solid%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Error%21%2520Database%2520connection%2520failed.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-solid%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%250A%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Closable alert</h2>
+                    <p class="text-3xl">This is the alert with closing functionality</p>
+                    <section class="sample-container">
+                        <div class="alert-container alert-warning-solid alert-warning-close">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.
+                            <button class="alert-close alert-warning-close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-solid%2520alert-warning-close%2522%253E%250A%2520%2520%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%250A%2520%2520%2509%253Cbutton%2520class%253D%2522alert-close%2520alert-warning-close-btn%2522%2520%2509%2509%2509%2509%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%2509%2509%2509%2509%2509%2509%2509onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Outlined alert</h2>
+                    <p class="text-3xl">These are the alerts which are containing specific coloured borders</p>
+                    <section class="sample-container">
+                        <div class="alert-container alert-primary-outline">
+                            <span><i class="margin-r fa fa-info-circle"></i></span>
+                            3 messages in incontainer.
+                        </div>
+                        <div class="alert-container alert-success-outline">
+                            <span><i class="margin-r fas fa-check-circle"></i></span>
+                            Congratulations! Successfully subscribed.
+                        </div>
+                        <div class="alert-container alert-danger-outline">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Error! Database connection failed.
+                        </div>
+                        <div class="alert-container alert-warning-outline">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.
+                        </div>
+                        <div class="alert-container alert-warning-outline alert-warning-close">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.
+                            <button class="alert-close alert-warning-close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-primary-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%25093%2520messages%2520in%2520incontainer.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-success-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Congratulations%21%2520Successfully%2520subscribed.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-danger-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Error%21%2520Database%2520connection%2520failed.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-outline%2520alert-warning-close%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%250A%2509%253Cbutton%2520class%253D%2522alert-close%2520alert-warning-close-btn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Link alert</h2>
+                    <p class="text-3xl">These are the alerts which are containing links to deal with the error or required action for the alert</p>
+                    <section class="sample-container">
+                        <div class="alert-container alert-primary-outline">
+                            <span><i class="margin-r fa fa-info-circle"></i></span>
+                            3 messages in incontainer.<a class="alert-link alert-link-primary" href="#">Click here for more information</a>
+                        </div>
+                        <div class="alert-container alert-success-outline">
+                            <span><i class="margin-r fas fa-check-circle"></i></span>
+                            Congratulations! Successfully subscribed.<a class="alert-link alert-link-success" href="#">Click here for more information</a>
+                        </div>
+                        <div class="alert-container alert-danger-outline">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Error! Database connection failed.<a class="alert-link alert-link-danger" href="#">Click here for more information</a>
+                        </div>
+                        <div class="alert-container alert-warning-outline">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.<a class="alert-link alert-link-warning" href="#">Click here for more information</a>
+                        </div>
+                        <div class="alert-container alert-warning-outline alert-warning-close">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.<a class="alert-link alert-link-warning" href="#">Click here for more information</a>
+                            <button class="alert-close alert-warning-close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-primary-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%25093%2520messages%2520in%2520incontainer.%253Ca%2520class%253D%2522alert-link%2520alert-link-primary%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520more%2520information%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-success-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Congratulations%21%2520Successfully%2520subscribed.%253Ca%2520class%253D%2522alert-link%2520alert-link-success%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520more%2520%2520%2520%2520%2520information%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-danger-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Error%21%2520Database%2520connection%2520failed.%253Ca%2520class%253D%2522alert-link%2520alert-link-danger%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520more%2520%2509%2509%2509information%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%253Ca%2520class%253D%2522alert-link%2520alert-link-warning%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520%2520%2509more%2520information%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-outline%2520alert-warning-close%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%253Ca%2520class%253D%2522alert-link%2520alert-link-warning%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520%2520%2509more%2520information%253C%252Fa%253E%250A%2520%2509%253Cbutton%2520class%253D%2522alert-close%2520alert-warning-close-btn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%2509%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
                 </div>
             </div>
+            <hr>
+            <div class="component-container">
+                <h1 class="text-underline">Avatars</h1>
+                <p class="text-4xl">Avatar is an icon which shows the users profile picture, This is displayed specific to the account. Normally for any accounts created if there is no any picture provided then automatically Text based icon will be displayed and if picture provided then that will be displayed</p>
+                <div class="component-item-container">
+                    <h3>Round Image Avatars</h3>
+                    <p class="text-3xl">These are different sized round shaped image avatars, different sizes of avatars large(lg), medium(md), small(sm) and extra-small(xs) sizes</p>
+                    <section class="sample-container">
+                        <div class="avatar avatar-lg">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-md">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-sm">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Round Text Avatars</h3>
+                    <p class="text-3xl">These are different sized round shaped text avatars, different sizes of avatars large(lg), medium(md), small(sm) and extra-small(xs) sizes</p>
+                    <section class="sample-container">
+                        <div class="avatar avatar-text-lg avatar-text img-round" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-md avatar-text img-round" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-sm avatar-text img-round" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-xs avatar-text img-round" role="img" alt="Avatar">AB</div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-text-lg%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-md%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Square Image Avatars</h3>
+                    <p class="text-3xl">These are different sized square shaped image avatars, different sizes of avatars large(lg), medium(md), small(sm) and extra-small(xs) sizes</p>
+                    <section class="sample-container">
+                        <div class="avatar avatar-lg">
+                            <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-md">
+                            <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-sm">
+                            <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Square Text Avatars</h3>
+                    <p class="text-3xl">These are different sized square shaped text avatars, different sizes of avatars large(lg), medium(md), small(sm) and extra-small(xs) sizes</p>
+                    <section class="sample-container">
+                        <div class="avatar avatar-text-lg avatar-text img-square" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-md avatar-text img-square" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-sm avatar-text img-square" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-xs avatar-text img-square" role="img" alt="Avatar">AB</div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-text-lg%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-md%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E"
+                                style="width: 990px;border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container">
+                <h1 class="text-underline">Badges</h1>
+                <p class="text-4xl">Badge is a component used to give information about the state. There are different types of badges in online store badges used to give information about new arrivals, In social media applications it is used to provide information about status of user and it is also used to provide information of number of items or messages</p>
+                <div class="component-item-container">
+                    <h3>Badge on Avatars</h3>
+                    <p class="text-3xl">These are the different types of badges on different sized avatars, They  are categorized as available(green), busy(red) and not avilable(orange)</p>
+                    <section class="sample-container">
+                        <div class="avatar avatar-lg">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                            <span class="status-badge-avatar badge-status-busy"></span>
+                        </div>
+                        <div class="avatar avatar-md">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                            <span class="status-badge-avatar badge-status-available"></span>
+                        </div>
+                        <div class="avatar avatar-sm">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                            <span class="status-badge-avatar badge-status-away"></span>
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                            <span class="status-badge-avatar badge-status-busy"></span>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Badge on Icons</h3>
+                    <p class="text-3xl">These are badges for icons, which is used to give information about the count of messages or state of icon</p>
+                    <section class="sample-container">
+                        <button class="badge-container badge-btn margin">
+                            <i class="fas fa-envelope"></i>
+                            <span class="status-badge-icon background-primary">30+</span>
+                        </button>
+                        <button class="badge-container badge-btn margin">
+                            <i class="fas fa-cart-shopping"></i>
+                            <span class="status-badge-icon background-primary">30</span>
+                        </button>
+                        <button class="badge-container badge-btn margin">
+                            <i class="fas fa-home"></i>
+                            <span class="status-badge-icon background-primary">3</span>
+                        </button>
+                        <button class="badge-container badge-btn margin">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="status-badge-icon background-primary">30+</span>
+                        </button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2520margin%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-icon%2520background-primary%2522%253E30%252B%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2520margin%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-icon%2520background-primary%2522%253E30%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2520margin%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-icon%2520background-primary%2522%253E3%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2520margin%2522%253E%250A%2509%253Ci%2520class%253D%2522fab%2520fa-whatsapp%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-icon%2520background-primary%2522%253E30%252B%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Text badges</h3>
+                    <p class="text-3xl">These are text badges which are resized based on the type of text</p>
+                    <section class="sample-container">
+                        <h1>Demo for Heading with Badge <span class="text-badge background-primary border-curve-badge">New</span></h1>
+                        <h2>Demo for Heading with Badge <span class="text-badge background-primary round-pill-badge">New</span></h2>
+                        <h3>Demo for Heading with Badge <span class="text-badge background-primary border-curve-badge">New</span></h3>
+                        <h4>Demo for Heading with Badge <span class="text-badge background-primary border-curve-badge">New</span></h4>
+                        <h5>Demo for Heading with Badge <span class="text-badge background-primary round-pill-badge">New</span></h5>
+                        <h6>Demo for Heading with Badge <span class="text-badge background-primary border-curve-badge">New</span></h6>
+                        <p>Demo for Paragraph with Badge <span class="text-badge background-primary border-curve-badge">New</span></p>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Ch1%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh1%253E%250A%253Ch2%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh2%253E%250A%253Ch3%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh3%253E%250A%253Ch4%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh4%253E%250A%253Ch5%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh5%253E%250A%253Ch6%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh6%253E%250A%253Cp%253EDemo%2520for%2520Paragraph%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fp%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Ribbon badges</h3>
+                    <p class="text-3xl">These are ribbon badges normally used on ecommerce products</p>
+                    <section class="sample-container flex">
+                        <div class="card">
+                            <div class="badge badge-offer">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="badge badge-new">
+                                <span></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-offer%2522%253E%250A%2509%2509%253Cspan%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-new%2522%253E%250A%2509%2509%253Cspan%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="width: 990px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <!-- <div class="component-container">
+                <h1 class="text-underline">Alerts</h1>
+                <p class="text-4xl">Alert is an message used to attract users attention and give important information about the user's action</p>
+                <div class="component-item-container">
+                    <h3>Basic alerts</h3>
+                    <p class="text-3xl">These are alerts with basic style and functionalities</p>
+                    <section class="sample-container">
+                    </section>
+                </div>
+            </div> -->
         </div>
     </div>
     <footer class="footer">

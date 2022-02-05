@@ -43,6 +43,15 @@ ul li{
 }
 
 a{
-    text-decoration: none;
     color: var(--primary-text-color);
+}
+
+hr{
+    margin: 1rem auto;
+   border: 1px solid var(--border-black);
+   width: 100%;
+}
+
+.flex{
+    display: flex;
 }
