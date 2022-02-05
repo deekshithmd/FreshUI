@@ -1,4 +1,5 @@
 .avatar{
+    display: inline-block;
     position: relative;
     font-size: 15px;
 }
@@ -6,7 +7,8 @@
 .img-round{
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid var(--border-white)
+    border: 3px solid var(--border-white);
+    vertical-align: middle;
 }
 
 .avatar-lg{
@@ -31,7 +33,7 @@
 
 .avatar-text{
     background-color: var(--primary-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
@@ -61,4 +63,5 @@
     object-fit: cover;
     border-radius: 20%;
     border: 3px solid var(--border-white);
+    vertical-align: middle;
 }

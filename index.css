@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8rem;
+    min-height: 10vh;
+    width: 100%;
+    top: 0;
 }
 
 .shadow-box{
@@ -15,9 +17,17 @@
 }
 
 .logo{
-    width: 8rem;
+    width: auto;
     height: 8rem;
     margin: auto 2rem;
+    display: inline-flex;
+}
+
+.brand-text{
+    font-size: 3rem;
+    margin: auto 0.5rem;
+    font-family: 'Calistoga', cursive;
+    color: var(--primary-color);
 }
 
 .logo img{
@@ -30,7 +40,8 @@
 }
 
 .nav-section-items{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -65,9 +76,14 @@
     color: var(--primary-text-color);
 }
 
+.nav-icon:hover{
+    color: var(--primary-color);
+}
+
 .main{
     display: flex;
     flex-direction: column;
+    padding: 3rem;
 }
 
 .intro-section{

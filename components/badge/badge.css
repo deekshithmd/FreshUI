@@ -1,6 +1,5 @@
 .badge-container{
     position: relative;
-    box-sizing: border-box;
 }
 
 .status-badge-avatar{
@@ -84,8 +83,8 @@
     position: absolute;
     width: 7rem;
     height: 7rem;
-    top: -1rem;
-    right: -1rem;
+    top: -0.5rem;
+    right: -0.5rem;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -94,7 +93,7 @@
 }
 
 .badge-new span::before{
-    content: '50% off';
+    content: 'new';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +108,7 @@
 }
 
 .badge-offer span::before{
-    content: 'new';
+    content: '20% off';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,12 +125,12 @@
 .badge span::after{
     position: absolute;
     content: '';
-    width: 1rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: var(--badge-shadow);
     bottom: 0;
     right: 0;
     z-index: -1;
-    box-shadow: -6rem -6rem var(--badge-shadow);
+    box-shadow: -6.5rem -6.5rem var(--badge-shadow);
 }
 

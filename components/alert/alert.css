@@ -1,5 +1,4 @@
 .alert-container{
-    box-sizing: border-box;
     width: 100%;
     font-size: 1.7rem;
     padding: 1rem;
@@ -79,30 +78,24 @@
     border: 2px solid var(--warning-text-color);
 }
 
-.alert-link-primary{
+.alert-link{
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
+}
+
+.alert-link-primary{
     color: var(--primary-alert-text-color);
 }
 
 .alert-link-success{
-    font-size: 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
     color: var(--success-text-color);
 }
 
 .alert-link-danger{
-    font-size: 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
     color: var(--danger-text-color);
 }
 
 .alert-link-warning{
-    font-size: 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
     color: var(--warning-text-color);
 }

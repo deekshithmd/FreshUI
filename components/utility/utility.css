@@ -14,6 +14,35 @@
     margin-bottom: 1rem;
 }
 
+.margin-lr{
+    margin: auto 1rem;
+}
+
 .margin{
     margin: 1rem;
+}
+
+.text-strike-through{
+    text-decoration: line-through;
+}
+
+.border-bottom{
+    border-bottom: 1px solid var(--border-black);
+}
+
+.border-right{
+    border-right: 1px solid var(--border-black);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-text-color);
 }
