@@ -54,4 +54,10 @@ hr{
 
 .flex{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.white-symbol{
+    color: var(--secondary-text-color)
 }

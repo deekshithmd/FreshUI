@@ -15,12 +15,14 @@
 
 .sidebar{
     grid-area: sidebar;
-    position:sticky;
-    top: 0;
-    overflow-y: auto;
     padding: 1.5rem;
     border-right: 1px solid var(--primary-color);
     overflow-x: hidden;
+    height: auto;
+    overflow-y: scroll;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .main{
@@ -69,6 +71,7 @@
     border-radius: 10px;
     box-shadow: 0 0 5px var(--light-black-background);
     padding: 20px;
+    height: auto;
 }
 
 .code-section{
@@ -76,7 +79,6 @@
     width: 100%;
     max-height: 300px;
     margin-top:3rem;
-    border-radius: 10px;
     padding: 0;
 }
 
@@ -91,5 +93,11 @@
 
 .footer-social-icons i{
     color: var(--secondary-text-color)
+}
+
+.go-top{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
