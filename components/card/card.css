@@ -27,6 +27,9 @@
 }
 
 .card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 18rem;
     min-height: 18rem;
     border-radius: 10px;
