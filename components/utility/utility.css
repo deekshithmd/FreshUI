@@ -67,6 +67,7 @@ hr{
     color: var(--primary-color);
 }
 
-.max-height-card-img{
-    max-height: 18rem;
+.text-bold{
+    font-weight: 600;
 }
+
