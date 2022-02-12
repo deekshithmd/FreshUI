@@ -1,0 +1,25 @@
+.modal{
+    width: 40rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 1rem;
+    display: none;
+    z-index: 5;
+}
+.modal-header{
+    border-bottom: 2px solid black;
+}
+
+.modal-body{
+    padding: 1rem 0;
+    text-align: justify;
+    border-bottom: 2px solid black;
+}
+
+.modal-actions{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
