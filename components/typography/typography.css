@@ -1,25 +1,31 @@
 .h1, h1{
     font-size: 3.2rem;
+    font-weight: bolder;
 }
 
 .h2, h2{
     font-size: 2.4rem;
+    font-weight: bolder;
 }
 
 .h3, h3{
     font-size: 1.87rem;
+    font-weight: bolder;
 }
 
 .h4, h4{
     font-size: 1.6rem;
+    font-weight: bolder;
 }
 
 .h5, h5{
     font-size: 1.32rem;
+    font-weight: bolder;
 }
 
 .h6, h6{
     font-size: 1.07rem;
+    font-weight: bolder;
 }
 
 p{
@@ -78,6 +84,10 @@ p{
     line-height: 2rem;
 }
 
+.grey-text{
+    color: var(--grey-color-text);
+}
+
 .text-justify{
     text-align: justify;
 }
@@ -98,4 +108,14 @@ p{
     text-decoration: underline;
 }
 
+.text-overline{
+    text-decoration: overline;
+}
 
+.primary-text{
+    color: var(--primary-color);
+}
+
+.text-strike-through{
+    text-decoration: line-through;
+}
