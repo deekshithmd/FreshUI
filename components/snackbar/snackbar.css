@@ -1,11 +1,3 @@
-.snackbar-baseline{
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
-    height: 100vh;
-    bottom: 0;
-}
-
 .snackbar-content{
     display: flex;
     justify-content: space-between;
