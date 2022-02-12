@@ -16,7 +16,7 @@ input{
 .input-labeled>label{
     position: absolute;
     top: -10px;
-    background: transparent;
+    background: var(--background-color);
     padding: 0 2px;
 }
 
