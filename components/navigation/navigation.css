@@ -4,13 +4,17 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--light-black-background);
-    width: 100%;
+    width: 100vw;
 }
 
 .logo img{
     width: 20rem;
     height: 7rem;
     padding: 1rem;
+}
+
+.search-item{
+    width: 30%;
 }
 
 .search-field{
@@ -35,7 +39,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 40%;
+    width: 30%;
 }
 
 .account-data a{
