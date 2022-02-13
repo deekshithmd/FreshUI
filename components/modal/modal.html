@@ -9,27 +9,32 @@
     <title>Modal</title>
 </head>
 <body>
-    <div class="modal">
-        <section class="modal-header">
-            <p class="subtitle-2 text-bold">Modal header</p>
-        </section>
-        <section class="modal-body text-2xl">
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-        </section>
-        <section class="modal-actions">
-            <button class="btn btn-solid-primary">Save</button>
-            <button class="btn btn-outline-primary margin-l">Close</button>
-        </section>
-    </div>
-    <button class="show">Show</button>
+    <button class="btn btn-solid-primary show-modal">Show</button>
 
+    <div class="modal-container">
+        <div class="modal">
+            <section class="modal-header">
+                <p class="subtitle-2 text-bold">Modal header</p>
+            </section>
+            <section class="modal-content text-2xl">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            </section>
+            <section class="modal-actions">
+                <button class="btn btn-solid-primary">Save</button>
+                <button class="btn btn-outline-primary margin-l close-modal">Close</button>
+            </section>
+        </div>
+    </div>
+    
     <script>
-        const sh= document.querySelector(".show");
-        const md= document.querySelector(".modal");
-        sh.addEventListener('click',()=>{
-            md.style.display="block";
-            document.body.style.opacity="0.5";
-            md.style.opacity="1";
+        const show= document.querySelector(".show-modal");
+        const modal= document.querySelector(".modal-container");
+        const close = document.querySelector(".close-modal");
+        show.addEventListener('click',()=>{
+            modal.style.display="flex";
+        })
+        close.addEventListener('click',()=>{
+            modal.style.display="none";
         })
     </script>
 </body>
