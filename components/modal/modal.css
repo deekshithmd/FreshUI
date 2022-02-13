@@ -6,7 +6,6 @@
     background-color: aqua;
     padding: 1rem;
     display: none;
-    z-index: 5;
 }
 .modal-header{
     border-bottom: 2px solid black;
