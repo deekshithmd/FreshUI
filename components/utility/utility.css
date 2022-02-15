@@ -71,3 +71,19 @@ hr{
     font-weight: 600;
 }
 
+.icon-right{
+    position: absolute;
+    right: 15px;
+    margin: auto;
+}
+
+.icon-top-right{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.icon-m{
+    font-size: 2rem;
+}
+
