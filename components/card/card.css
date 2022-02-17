@@ -41,6 +41,10 @@
     height: 100%;
 }
 
+.horizontal-img img{
+    max-height: 18rem;
+}
+
 .card-details{
     display: flex;
     flex-direction: column;
@@ -57,6 +61,10 @@
 
 .card-sub-heading{
     font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.rating{
     margin: 5px 0;
 }
 
